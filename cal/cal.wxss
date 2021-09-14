@@ -1,0 +1,68 @@
+page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.result {
+  flex: 1;
+  background: #e4e4e4;
+  position: relative;
+}
+
+.result-num {
+  position: absolute;
+  bottom: 5vh;
+  right: 3vw;
+}
+
+.result-op {
+  position: absolute;
+  bottom: 1vh;
+  right: 3vw;
+}
+
+.btns {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.bg {
+  background: #ddd;
+}
+
+.btns>view {
+  flex: 1;
+  display: flex;
+  /* flex-direction: row; */
+}
+
+.btns>view>view {
+  flex-basis: 25%;
+  border: 1rpx solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
+
+}
+
+.btns>view:last-child>view:first-child {
+  flex-basis: 50%;
+}
+
+.btns>view:first-child>view {
+  background-color: darkgrey;
+}
+
+.btns>view>view:last-child {
+  color: cornsilk;
+  background-color: rgba(226, 153, 43, 0.795);
+}
+
+.btns>view:nth-child(n+2)>view:nth-last-child(n+2) {
+  background: rgba(71, 66, 71, 0.884);
+  color: aliceblue
+}

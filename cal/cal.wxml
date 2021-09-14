@@ -1,0 +1,52 @@
+<!-- 历史记录 -->
+<view>
+  <text>{{logs}}</text>
+</view>
+
+
+<!-- 显示结果 -->
+<view class="result">
+
+<text class="result-num">{{num}}</text>
+<text class="result-op">{{op}}</text>
+
+</view>
+<!-- 按钮区 -->
+<view class="btns">
+  <!-- 第一行 -->
+  <view>
+    <view hover-class="bg" bindtap="numBut">C</view>
+    <view hover-class="bg" bindtap="delBut">DEL</view>
+    <view hover-class="bg" bindtap="opBut" data-val="%">%</view>
+    <view hover-class="bg" bindtap="opBut" data-val="/">÷</view>
+  </view>
+<!-- 二 -->
+  <view>
+    <view hover-class="bg" bindtap="numBut" data-val="7">7</view>
+    <view hover-class="bg" bindtap="numBut" data-val="8">8</view>
+    <view hover-class="bg" bindtap="numBut" data-val="9">9</view>
+    <view hover-class="bg" bindtap="opBut" data-val="*">x</view>
+  </view>
+<!-- 三 -->
+  <view>
+    <view hover-class="bg" bindtap="numBut" data-val="4">4</view>
+    <view hover-class="bg" bindtap="numBut" data-val="5">5</view>
+    <view hover-class="bg" bindtap="numBut" data-val="6">6</view>
+    <view hover-class="bg" bindtap="opBut" data-val="-">-</view>
+  </view>
+  <!-- 四 -->
+  
+  <view>
+    <view hover-class="bg" bindtap="numBut" data-val="1">1</view>
+    <view hover-class="bg" bindtap="numBut" data-val="2">2</view>
+    <view hover-class="bg" bindtap="numBut" data-val="3">3</view>
+    <view hover-class="bg" bindtap="opBut" data-val="+">+</view>
+  </view>
+  <!-- 五 -->
+  
+  <view>
+    <view hover-class="bg" bindtap="numBut" data-val="0">0</view>
+    <view hover-class="bg" bindtap="dotBut" >.</view>
+    <view hover-class="bg" bindtap="opBut" data-val="=">=</view>
+  </view>
+</view>
